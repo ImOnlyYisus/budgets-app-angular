@@ -1,0 +1,10 @@
+<section>
+    <h2 class="font-title">Ingrese su presupuesto</h2>
+    <div class="card">
+        <div class="error-content" *ngIf="incorrectAmount">
+            <span class="badge bg-banner">EL PRESUPUESTO DEBE SER MAYOR A 0</span>
+        </div>
+        <input type="number" [(ngModel)]="amount" placeholder="Ingrese su presupuesto">
+        <button (click)="add()">Aceptar</button>
+    </div>
+</section>

@@ -1,0 +1,11 @@
+<h4>Listado de gastos</h4>
+<hr>
+<section>
+    <p class="budget green">Presupuesto: ${{budget}}</p>
+    <p class="remaining" [ngClass]="remainingColor()">Restante: ${{remaining}}</p>
+</section>
+<section>
+    <ul>
+        <li *ngFor="let expense of expenseList">{{expense.name}} - <strong>${{expense.amount}}</strong></li>
+    </ul>
+</section>

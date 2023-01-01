@@ -1,0 +1,49 @@
+section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section h2{
+    margin-top: 4rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: aliceblue;
+    width: 100%;
+    max-width: 500px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    font-size: 1.2rem;
+    outline: none;
+    padding: .3rem 1rem 0.3rem 0.3rem;
+}
+
+button{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #9b9b9b;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: #6b6b6b;
+}

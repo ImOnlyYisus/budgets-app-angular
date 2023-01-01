@@ -1,0 +1,16 @@
+<h4>Ingresar Gastos</h4>
+<div class="error-content" *ngIf="incorrectField">
+    <span class="badge bg-banner">{{incorrectFieldText}}</span>
+</div>
+<hr>
+<form>
+    <label for="expense">Gastos</label>
+    <input type="text" name="expense" id="expense" placeholder="Ej: Gimansio.." [(ngModel)]="expenseName">
+</form>
+<form>
+    <label for="amount">Cantidad</label>
+    <input type="number" name="amount" id="amount" placeholder="Ingresa la cantidad" [(ngModel)]="expenseAmount">
+</form>
+<form>
+    <button (click)="addExpense()">Agregar gasto</button>
+</form>
